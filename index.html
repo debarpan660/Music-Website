@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <h2>🎵 Music World</h2>
+
+    <ul>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#songs">Songs</a></li>
+       <li><a href="#artists">Artists</a></li>
+       <li><a href="#albums">Albums</a></li>
+       <li><a href="#favorites">Favorites</a></li>
+    </ul>
+</nav>
+<section id="home" class="hero">
+    <h1>Welcome to Music World</h1>
+    <p>Listen to your favorite songs anytime, anywhere.</p>
+
+   <input type="text" id="searchInput" placeholder="Search songs..." autocomplete="off">
+   <button id="searchBtn">Search</button>
+</section>
+<section id="songs" class="songs">
+
+    <h2>Featured Songs</h2>
+
+    <div class="song-container">
+
+        <div class="song-card">
+            <img src="images/song1.jpg" alt="Song">
+            <h3 id="song1">Shape of You</h3>
+            <p>Ed Sheeran</p>
+            <button id="play1">Play</button>
+            <button id="fav1">🤍</button>
+        </div>
+
+        <div class="song-card">
+            <img src="images/song2.jpg" alt="Song">
+            <h3 id="song2">Believer</h3>
+            <p>Imagine Dragons</p>
+            <button id="play2">Play</button>
+            <button id="fav2">🤍</button>
+        </div>
+
+        <div class="song-card">
+            <img src="images/song3.jpg" alt="Song">
+            <h3 id="song3">Perfect</h3>
+            <p>Ed Sheeran</p>
+            <button id="play3">Play</button>
+            <button id="fav3">🤍</button>
+        </div>
+
+    </div>
+
+</section>
+<section id="favorites" class="favorites">
+    <h2>My Favorites ❤️</h2>
+
+    <div id="favoriteList">
+        No favorite songs yet.
+    </div>
+</section>
+<section id="artists" class="artists">
+
+    <h2>Popular Artists</h2>
+
+    <div class="artist-container">
+
+        <div class="artist-card">
+            <img src="images/artist1.jpg" alt="Artist">
+            <h3>Arijit Singh</h3>
+            <p>Romantic Singer</p>
+            <button>View Songs</button>
+        </div>
+
+        <div class="artist-card">
+            <img src="images/artist2.jpg" alt="Artist">
+            <h3>Shreya Ghoshal</h3>
+            <p>Playback Singer</p>
+            <button>View Songs</button>
+        </div>
+
+        <div class="artist-card">
+            <img src="images/artist3.jpg" alt="Artist">
+            <h3>Armaan Malik</h3>
+            <p>Pop Singer</p>
+            <button>View Songs</button>
+        </div>
+
+        <div class="artist-card">
+            <img src="images/artist4.jpg" alt="Artist">
+            <h3>Sonu Nigam</h3>
+            <p>Legendary Singer</p>
+            <button>View Songs</button>
+        </div>
+
+    </div>
+
+</section>
+<section id="albums" class="albums">
+
+    <h2>Popular Albums</h2>
+
+    <div class="album-container">
+
+        <div class="album-card">
+            <img src="images/album1.jpg" alt="Album">
+            <h3>Classic Songs</h3>
+        </div>
+
+        <div class="album-card">
+            <img src="images/album2.jpg" alt="Album">
+            <h3>Loveholic</h3>
+        </div>
+
+        <div class="album-card">
+            <img src="images/album3.jpg" alt="Album">
+            <h3>Midnight Melodies</h3>
+        </div>
+
+        <div class="album-card">
+            <img src="images/album4.jpg" alt="Album">
+            <h3>Acoustic Vibes</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="genres">
+
+    <h2>Music Genres</h2>
+
+    <div class="genre-container">
+
+        <button>Pop</button>
+        <button>Rock</button>
+        <button>Hip Hop</button>
+        <button>Classical</button>
+        <button>Jazz</button>
+        <button>Lo-fi</button>
+
+    </div>
+
+</section>
+<section class="player">
+
+    <h2>Now Playing</h2>
+
+    <div class="player-card">
+      <img id="currentCover" src="images/song1.jpg" alt="Album Cover">
+
+       <h3 id="currentTitle">Shape of You</h3>
+
+        <p id="currentArtist">Ed Sheeran</p>
+        <div class="equalizer" id="equalizer">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+        <div class="controls">
+        <button id="prevBtn">⏮</button>
+
+        <button id="shuffleBtn">🔀</button>
+
+        <button id="playPauseBtn">▶</button>
+
+        <button id="repeatBtn">🔁</button>
+
+        <button id="nextBtn">⏭</button>
+        </div>
+        <div id="timeDisplay">
+            00:00 / 00:00
+        </div>
+        <div class="progress-container" id="progressContainer">
+    <div id="progressBar">
+        <div id="progressThumb"></div>
+    </div>
+</div>
+        <div class="volume-container">
+
+    <button id="muteBtn">🔊</button>
+
+    <input
+        type="range"
+        id="volumeSlider"
+        min="0"
+        max="100"
+        value="100">
+
+</div>
+        <audio id="audioPlayer">
+
+            <source src="music/song1.mp3" type="audio/mpeg">
+
+        </audio>
+
+    </div>
+
+</section>
+    <script src="script.js"></script>
+    <footer class="footer">
+    <p>© 2026 Music World | Created by Debarpan Datta</p>
+</footer>
+</body>
+</html>
