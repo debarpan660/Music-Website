@@ -27,7 +27,7 @@ A responsive Music Website with a custom music player built using HTML, CSS, and
 ## 🌐 Live Demo
 
 **Vercel:**
-Paste your Vercel link here.
+https://music-website-eta-beige.vercel.app
 
 ## 👨‍💻 Author
 
